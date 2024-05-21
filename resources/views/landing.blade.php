@@ -46,7 +46,7 @@
             <a href="index.html" class="logo d-flex align-items-center me-auto">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
                 <!-- <img src="{{ asset('landing_assets/img/logo.png') }}" alt=""> -->
-                <h1 class="sitename">Arsha</h1>
+                <h1 class="sitename" style="font-weight: bold ">IOTROVE</h1>
             </a>
 
             <nav id="navmenu" class="navmenu">
@@ -95,14 +95,23 @@
                 <div class="row gy-4">
                     <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center"
                         data-aos="zoom-out">
-                        <h1 class="">{{ $dataHumidity->humidity }}</h1>
-                        <p class="">We are team of talented designers making websites with Bootstrap</p>
+                        <h2 style="font-weight: bold ; color: yellowgreen"> Smart IoT</h2>
+                        <h1 class=""> 
+                            IoT-based Integrated Multi-Sensor System to Maintain Mangrove
+                            Ecosystem Resilience</h1>
+                            <br>
+                        <p class="">Smart IoT that aims to help mangrove <br> forest managers monitor mangrove ecosystems.</p>
                         <div class="d-flex">
                             <a href="#about" class="btn-get-started">Get Started</a>
                             <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
                                 class="glightbox btn-watch-video d-flex align-items-center"><i
                                     class="bi bi-play-circle"></i><span>Watch Video</span></a>
                         </div>
+                        <br>
+                        <ul style="list-style: none">
+                            <li><i class="bi bi-check2-circle"></i> <span>Using web-based and mobile multi-sensor systems</span></li>
+                            <li><i class="bi bi-check2-circle"></i> <span>Monitoring Mangrove Ecosystems in Real-time</span></li>    
+                        </ul>
                     </div>
                     <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
                         <img src="{{ asset('landing_assets/img/hero-img.png') }}" class="img-fluid animated" alt="">
@@ -208,10 +217,7 @@
                     </div>
 
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                            laborum. </p>
+                        <p>IOTROVE is a multi-sensor IoT tool that functions to directly monitor the state of the environment around the mangrove forest which is integrated with website and mobile applications.</p>
                         <a href="#" class="read-more"><span>Read More</span><i
                                 class="bi bi-arrow-right"></i></a>
                     </div>
