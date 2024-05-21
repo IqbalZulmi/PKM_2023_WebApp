@@ -607,7 +607,7 @@
                             <div class="pic"><img src="{{ asset('landing_assets/img/team/team-1.jpg') }}" class="img-fluid"
                                     alt=""></div>
                             <div class="member-info">
-                                <h4>Walter White</h4>
+                                <h4>Alfaturrhman</h4>
                                 <span>Chief Executive Officer</span>
                                 <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
                                 <div class="social">
@@ -625,7 +625,7 @@
                             <div class="pic"><img src="{{ asset('landing_assets/img/team/team-2.jpg') }}" class="img-fluid"
                                     alt=""></div>
                             <div class="member-info">
-                                <h4>Sarah Jhonson</h4>
+                                <h4>A.Iqbal Zulmi</h4>
                                 <span>Product Manager</span>
                                 <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
                                 <div class="social">
@@ -643,7 +643,7 @@
                             <div class="pic"><img src="{{ asset('landing_assets/img/team/team-3.jpg') }}" class="img-fluid"
                                     alt=""></div>
                             <div class="member-info">
-                                <h4>William Anderson</h4>
+                                <h4>Bustanul Ariffim</h4>
                                 <span>CTO</span>
                                 <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
                                 <div class="social">
@@ -661,7 +661,7 @@
                             <div class="pic"><img src="{{ asset('landing_assets/img/team/team-4.jpg') }}" class="img-fluid"
                                     alt=""></div>
                             <div class="member-info">
-                                <h4>Amanda Jepson</h4>
+                                <h4>Naufal Arig Dzaki R.H.</h4>
                                 <span>Accountant</span>
                                 <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
                                 <div class="social">

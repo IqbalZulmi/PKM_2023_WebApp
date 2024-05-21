@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\HumidityController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +16,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', ([HumidityController::class,'getHumidity']))
-->name('landingPage');
+// Route::get('/', ([HumidityController::class,'getHumidity']))
+// ->name('landingPage');
+
+// Route::get('/', [LoginController::class, 'Login'])
+// ->name('login');
+
+Route::get('/', [DashboardController::class, 'Home'])
+ ->name('Home');
+
