@@ -90,13 +90,12 @@
 
         <!-- Hero Section -->
         <section id="hero" class="hero section">
-
             <div class="container">
                 <div class="row gy-4">
                     <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center"
                         data-aos="zoom-out">
-                        <h2 style="font-weight: bold ; color: yellowgreen"> Smart IoT</h2>
-                        <h1 class=""> 
+                        <h2 class="fw-bold"> Smart IoT</h2>
+                        <h1 class="">
                             IoT-based Integrated Multi-Sensor System to Maintain Mangrove
                             Ecosystem Resilience</h1>
                             <br>
@@ -110,7 +109,7 @@
                         <br>
                         <ul style="list-style: none">
                             <li><i class="bi bi-check2-circle"></i> <span>Using web-based and mobile multi-sensor systems</span></li>
-                            <li><i class="bi bi-check2-circle"></i> <span>Monitoring Mangrove Ecosystems in Real-time</span></li>    
+                            <li><i class="bi bi-check2-circle"></i> <span>Monitoring Mangrove Ecosystems in Real-time</span></li>
                         </ul>
                     </div>
                     <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
