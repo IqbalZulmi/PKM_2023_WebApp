@@ -29,13 +29,6 @@
     <!-- Main CSS File -->
     <link href="{{ asset('landing_assets/css/main.css') }}" rel="stylesheet">
 
-    <!-- =======================================================
-  * Template Name: Arsha
-  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-  * Updated: May 13 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
@@ -81,7 +74,7 @@
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
 
-            <a class="btn-getstarted" href="#about">Get Started</a>
+            <a class="btn-getstarted" href="/login">Get Started</a>
 
         </div>
     </header>
@@ -108,7 +101,7 @@
                         </div>
                         <br>
                         <ul style="list-style: none">
-                            <li><i class="bi bi-check2-circle"></i> <span>Using web-based and mobile multi-sensor systems</span></li>
+                            <li><i class="bi bi-check2-circle"></i> <span>Using web-based and multi-sensor systems</span></li>
                             <li><i class="bi bi-check2-circle"></i> <span>Monitoring Mangrove Ecosystems in Real-time</span></li>
                         </ul>
                     </div>
@@ -194,220 +187,115 @@
             <div class="container section-title" data-aos="fade-up">
                 <h2 class="">About Us</h2>
             </div><!-- End Section Title -->
-
             <div class="container">
-
                 <div class="row gy-4">
-
                     <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore
-                            magna aliqua.
+                            Welcome to our initiative, "Integrated Multi-Sensor System Based on IoT to Safeguard Mangrove Ecosystem Resilience in Batam City Against Environmental Pollution Threats." We are a dedicated team of environmental scientists, technology experts, and community activists committed to protecting and preserving the vital mangrove ecosystems in Batam City.
                         </p>
                         <ul>
-                            <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat.</span></li>
-                            <li><i class="bi bi-check2-circle"></i> <span>Duis aute irure dolor in reprehenderit in
-                                    voluptate velit.</span></li>
-                            <li><i class="bi bi-check2-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea
-                                    commodo</span></li>
+                            <li><i class="bi bi-check2-circle"></i> <span>We utilize labor and resources efficiently to provide the best outcomes.</span></li>
+                            <li><i class="bi bi-check2-circle"></i> <span>Our efforts reduce the impact of environmental pollutants on mangrove ecosystems.</span></li>
+                            <li><i class="bi bi-check2-circle"></i> <span>We are dedicated to continuous improvement and innovation in environmental protection.</span></li>
                         </ul>
                     </div>
-
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                        <p>IOTROVE is a multi-sensor IoT tool that functions to directly monitor the state of the environment around the mangrove forest which is integrated with website and mobile applications.</p>
-                        <a href="#" class="read-more"><span>Read More</span><i
-                                class="bi bi-arrow-right"></i></a>
+                        <p>IOTROVE is a multi-sensor IoT tool designed to directly monitor the environmental conditions surrounding the mangrove forests, integrated with a user-friendly website.</p>
+                        <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
                     </div>
-
                 </div>
-
             </div>
 
         </section><!-- /About Section -->
 
         <!-- Why Us Section -->
         <section id="why-us" class="section why-us" data-builder="section">
-
             <div class="container-fluid">
-
                 <div class="row gy-4">
-
                     <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
-
                         <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
-                            <h3 class=""><span class="">Eum ipsam laborum deleniti </span><strong>velit
-                                    pariatur architecto aut nihil</strong></h3>
+                            <h3 class=""><span class="">Integrated Multi-Sensor System Based on IoT to </span><strong>Safeguard Mangrove Ecosystem Resilience in Batam City Against Environmental Pollution Threats</strong></h3>
                             <p class="">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                                Welcome to our initiative, "Integrated Multi-Sensor System Based on IoT to Safeguard Mangrove Ecosystem Resilience in Batam City Against Environmental Pollution Threats." We are a dedicated team of environmental scientists, technology experts, and community activists committed to protecting and preserving the vital mangrove ecosystems in Batam City.
                             </p>
                         </div>
-
                         <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
-
                             <div class="faq-item faq-active">
-
-                                <h3><span>01</span> Non consectetur a erat nam at lectus urna duis?</h3>
+                                <h3><span>01</span> How does the integrated multi-sensor system work?</h3>
                                 <div class="faq-content">
-                                    <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
-                                        laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor
-                                        rhoncus dolor purus non.</p>
+                                    <p>The system employs various sensors to monitor environmental conditions, such as water quality, soil moisture, and air pollutants. These sensors are connected through IoT technology to provide real-time data and alerts.</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
-
                             <div class="faq-item">
-                                <h3><span>02</span> Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
-                                </h3>
+                                <h3><span>02</span> What are the benefits of using this system?</h3>
                                 <div class="faq-content">
-                                    <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
-                                        interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
-                                        scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
-                                        Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                                    <p>This system helps in early detection of pollution threats, allowing for timely intervention to protect the mangrove ecosystem. It also supports data-driven decision-making for environmental management.</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
-
                             <div class="faq-item">
-                                <h3><span>03</span> Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                                <h3><span>03</span> Who can access the data collected by the system?</h3>
                                 <div class="faq-content">
-                                    <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.
-                                        Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl
-                                        suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis
-                                        convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                                    </p>
+                                    <p>The data is accessible to environmental authorities, researchers, and the local community through a user-friendly website. This transparency ensures community involvement in conservation efforts.</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
-
                         </div>
-
                     </div>
-
                     <div class="col-lg-5 order-1 order-lg-2 why-us-img">
-                        <img src="{{ asset('landing_assets/img/why-us.png') }}" class="img-fluid" alt="" data-aos="zoom-in"
-                            data-aos-delay="100">
+                        <img src="{{ asset('landing_assets/img/why-us.png') }}" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
                     </div>
                 </div>
-
             </div>
-
-        </section><!-- /Why Us Section -->
-
-        <!-- Skills Section -->
-        <section id="skills" class="skills section">
-
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="row">
-
-                    <div class="col-lg-6 d-flex align-items-center">
-                        <img src="{{ asset('landing_assets/img/skills.png') }}" class="img-fluid" alt="">
-                    </div>
-
-                    <div class="col-lg-6 pt-4 pt-lg-0 content">
-
-                        <h3>Voluptatem dignissimos provident quasi corporis voluptas</h3>
-                        <p class="fst-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
-                        </p>
-
-                        <div class="skills-content skills-animation">
-
-                            <div class="progress">
-                                <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-                                <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="100"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div><!-- End Skills Item -->
-
-                            <div class="progress">
-                                <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-                                <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div><!-- End Skills Item -->
-
-                            <div class="progress">
-                                <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-                                <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="75"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div><!-- End Skills Item -->
-
-                            <div class="progress">
-                                <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
-                                <div class="progress-bar-wrap">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="55"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div><!-- End Skills Item -->
-
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-        </section><!-- /Skills Section -->
+        </section>
+        <!-- /Why Us Section -->
 
         <!-- Services Section -->
         <section id="services" class="services section">
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Services</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                <h2>Our Services</h2>
+                <p>We offer a range of services to support the monitoring and protection of mangrove ecosystems using advanced IoT technologies.</p>
             </div><!-- End Section Title -->
-
             <div class="container">
-
                 <div class="row gy-4">
-
                     <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-activity icon"></i></div>
-                            <h4><a href="service-details.html" class="stretched-link">Lorem Ipsum</a></h4>
-                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                            <h4><a href="service-details.html" class="stretched-link">Real-time Monitoring</a></h4>
+                            <p>We provide real-time environmental monitoring using a network of IoT sensors to track water quality, air quality, and soil conditions.</p>
                         </div>
                     </div><!-- End Service Item -->
 
                     <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-                            <h4><a href="service-details.html" class="stretched-link">Sed ut perspici</a></h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                            <h4><a href="service-details.html" class="stretched-link">Data Analysis</a></h4>
+                            <p>Our advanced data analysis tools help interpret sensor data, providing insights into environmental trends and pollution levels.</p>
                         </div>
                     </div><!-- End Service Item -->
 
                     <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
                         <div class="service-item position-relative">
-                            <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-                            <h4><a href="service-details.html" class="stretched-link">Magni Dolores</a></h4>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                            <div class="icon"><i class="bi bi-broadcast icon"></i></div>
+                            <h4><a href="service-details.html" class="stretched-link">Alert Systems</a></h4>
+                            <p>We offer alert systems that notify stakeholders of critical changes in environmental conditions, enabling prompt response and action.</p>
                         </div>
                     </div><!-- End Service Item -->
 
                     <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-broadcast icon"></i></div>
-                            <h4><a href="service-details.html" class="stretched-link">Nemo Enim</a></h4>
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                            <h4><a href="service-details.html" class="stretched-link">Community Engagement</a></h4>
+                            <p>We engage with local communities to educate and involve them in the conservation efforts, fostering a collaborative approach to environmental protection.</p>
                         </div>
                     </div><!-- End Service Item -->
-
                 </div>
-
             </div>
-
-        </section><!-- /Services Section -->
+        </section>
+        <!-- /Services Section -->
 
         <!-- Call To Action Section -->
         <section id="call-to-action" class="call-to-action section">
@@ -416,7 +304,7 @@
 
             <div class="container">
 
-                <div class="row" data-aos="zoom-in" data-aos-delay="100">
+                <div class="row" data-aos="zoom-in" data-aos-delay="90">
                     <div class="col-xl-9 text-center text-xl-start">
                         <h3>Call To Action</h3>
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
@@ -432,163 +320,6 @@
 
         </section><!-- /Call To Action Section -->
 
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="portfolio section">
-
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Portfolio</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-            </div><!-- End Section Title -->
-
-            <div class="container">
-
-                <div class="isotope-layout" data-default-filter="*" data-layout="masonry"
-                    data-sort="original-order">
-
-                    <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-                        <li data-filter="*" class="filter-active">All</li>
-                        <li data-filter=".filter-app">App</li>
-                        <li data-filter=".filter-product">Card</li>
-                        <li data-filter=".filter-branding">Web</li>
-                    </ul><!-- End Portfolio Filters -->
-
-                    <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                            <img src="{{ asset('landing_assets/img/masonry-portfolio/masonry-portfolio-1.jpg') }}" class="img-fluid"
-                                alt="">
-                            <div class="portfolio-info">
-                                <h4>App 1</h4>
-                                <p>Lorem ipsum, dolor sit</p>
-                                <a href="{{ asset('landing_assets/img/masonry-portfolio/masonry-portfolio-1.jpg') }}" title="App 1"
-                                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
-                                        class="bi bi-zoom-in"></i></a>
-                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                        class="bi bi-link-45deg"></i></a>
-                            </div>
-                        </div><!-- End Portfolio Item -->
-
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                            <img src="{{ asset('landing_assets/img/masonry-portfolio/masonry-portfolio-2.jpg') }}" class="img-fluid"
-                                alt="">
-                            <div class="portfolio-info">
-                                <h4>Product 1</h4>
-                                <p>Lorem ipsum, dolor sit</p>
-                                <a href="{{ asset('landing_assets/img/masonry-portfolio/masonry-portfolio-2.jpg') }}" title="Product 1"
-                                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                                        class="bi bi-zoom-in"></i></a>
-                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                        class="bi bi-link-45deg"></i></a>
-                            </div>
-                        </div><!-- End Portfolio Item -->
-
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                            <img src="{{ asset('landing_assets/img/masonry-portfolio/masonry-portfolio-3.jpg') }}" class="img-fluid"
-                                alt="">
-                            <div class="portfolio-info">
-                                <h4>Branding 1</h4>
-                                <p>Lorem ipsum, dolor sit</p>
-                                <a href="{{ asset('landing_assets/img/masonry-portfolio/masonry-portfolio-3.jpg') }}" title="Branding 1"
-                                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                                        class="bi bi-zoom-in"></i></a>
-                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                        class="bi bi-link-45deg"></i></a>
-                            </div>
-                        </div><!-- End Portfolio Item -->
-
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                            <img src="{{ asset('landing_assets/img/masonry-portfolio/masonry-portfolio-4.jpg') }}" class="img-fluid"
-                                alt="">
-                            <div class="portfolio-info">
-                                <h4>App 2</h4>
-                                <p>Lorem ipsum, dolor sit</p>
-                                <a href="{{ asset('landing_assets/img/masonry-portfolio/masonry-portfolio-4.jpg') }}" title="App 2"
-                                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
-                                        class="bi bi-zoom-in"></i></a>
-                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                        class="bi bi-link-45deg"></i></a>
-                            </div>
-                        </div><!-- End Portfolio Item -->
-
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                            <img src="{{ asset('landing_assets/img/masonry-portfolio/masonry-portfolio-5.jpg') }}" class="img-fluid"
-                                alt="">
-                            <div class="portfolio-info">
-                                <h4>Product 2</h4>
-                                <p>Lorem ipsum, dolor sit</p>
-                                <a href="{{ asset('landing_assets/img/masonry-portfolio/masonry-portfolio-5.jpg') }}" title="Product 2"
-                                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                                        class="bi bi-zoom-in"></i></a>
-                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                        class="bi bi-link-45deg"></i></a>
-                            </div>
-                        </div><!-- End Portfolio Item -->
-
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                            <img src="{{ asset('landing_assets/img/masonry-portfolio/masonry-portfolio-6.jpg') }}" class="img-fluid"
-                                alt="">
-                            <div class="portfolio-info">
-                                <h4>Branding 2</h4>
-                                <p>Lorem ipsum, dolor sit</p>
-                                <a href="{{ asset('landing_assets/img/masonry-portfolio/masonry-portfolio-6.jpg') }}" title="Branding 2"
-                                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                                        class="bi bi-zoom-in"></i></a>
-                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                        class="bi bi-link-45deg"></i></a>
-                            </div>
-                        </div><!-- End Portfolio Item -->
-
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                            <img src="{{ asset('landing_assets/img/masonry-portfolio/masonry-portfolio-7.jpg') }}" class="img-fluid"
-                                alt="">
-                            <div class="portfolio-info">
-                                <h4>App 3</h4>
-                                <p>Lorem ipsum, dolor sit</p>
-                                <a href="{{ asset('landing_assets/img/masonry-portfolio/masonry-portfolio-7.jpg') }}" title="App 3"
-                                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
-                                        class="bi bi-zoom-in"></i></a>
-                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                        class="bi bi-link-45deg"></i></a>
-                            </div>
-                        </div><!-- End Portfolio Item -->
-
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                            <img src="{{ asset('landing_assets/img/masonry-portfolio/masonry-portfolio-8.jpg') }}" class="img-fluid"
-                                alt="">
-                            <div class="portfolio-info">
-                                <h4>Product 3</h4>
-                                <p>Lorem ipsum, dolor sit</p>
-                                <a href="{{ asset('landing_assets/img/masonry-portfolio/masonry-portfolio-8.jpg') }}" title="Product 3"
-                                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                                        class="bi bi-zoom-in"></i></a>
-                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                        class="bi bi-link-45deg"></i></a>
-                            </div>
-                        </div><!-- End Portfolio Item -->
-
-                        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                            <img src="{{ asset('landing_assets/img/masonry-portfolio/masonry-portfolio-9.jpg') }}" class="img-fluid"
-                                alt="">
-                            <div class="portfolio-info">
-                                <h4>Branding 3</h4>
-                                <p>Lorem ipsum, dolor sit</p>
-                                <a href="{{ asset('landing_assets/img/masonry-portfolio/masonry-portfolio-9.jpg') }}" title="Branding 2"
-                                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                                        class="bi bi-zoom-in"></i></a>
-                                <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                                        class="bi bi-link-45deg"></i></a>
-                            </div>
-                        </div><!-- End Portfolio Item -->
-
-                    </div><!-- End Portfolio Container -->
-
-                </div>
-
-            </div>
-
-        </section><!-- /Portfolio Section -->
-
         <!-- Team Section -->
         <section id="team" class="team section">
 
@@ -602,14 +333,32 @@
 
                 <div class="row gy-4">
 
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="90">
                         <div class="team-member d-flex align-items-start">
                             <div class="pic"><img src="{{ asset('landing_assets/img/team/team-1.jpg') }}" class="img-fluid"
                                     alt=""></div>
                             <div class="member-info">
                                 <h4>Alfaturrhman</h4>
                                 <span>Chief Executive Officer</span>
-                                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                                <p>"Jangan semnagat tetap putus asa"</p>
+                                <div class="social">
+                                    <a href=""><i class="bi bi-twitter"></i></a>
+                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href=""><i class="bi bi-instagram"></i></a>
+                                    <a href=""> <i class="bi bi-linkedin"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Team Member -->
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="team-member d-flex align-items-start">
+                            <div class="pic"><img src="{{ asset('landing_assets/img/team/team-2.jpg') }}" class="img-fluid"
+                                    alt=""></div>
+                            <div class="member-info">
+                                <h4>A.Iqbal Zulmi</h4>
+                                <span>Chief Technical Officer</span>
+                                <p>"Why you like that lah"</p>
                                 <div class="social">
                                     <a href=""><i class="bi bi-twitter"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -622,12 +371,12 @@
 
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="team-member d-flex align-items-start">
-                            <div class="pic"><img src="{{ asset('landing_assets/img/team/team-2.jpg') }}" class="img-fluid"
+                            <div class="pic"><img src="{{ asset('landing_assets/img/team/team-3.jpg') }}" class="img-fluid"
                                     alt=""></div>
                             <div class="member-info">
-                                <h4>A.Iqbal Zulmi</h4>
-                                <span>Product Manager</span>
-                                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                                <h4>Bustanul Ariffim</h4>
+                                <span>Chief Technical Officer</span>
+                                <p>"Butuh Costumer Bang belilah Yamahaku :)"</p>
                                 <div class="social">
                                     <a href=""><i class="bi bi-twitter"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -640,30 +389,12 @@
 
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="team-member d-flex align-items-start">
-                            <div class="pic"><img src="{{ asset('landing_assets/img/team/team-3.jpg') }}" class="img-fluid"
-                                    alt=""></div>
-                            <div class="member-info">
-                                <h4>Bustanul Ariffim</h4>
-                                <span>CTO</span>
-                                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
-                                <div class="social">
-                                    <a href=""><i class="bi bi-twitter"></i></a>
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-instagram"></i></a>
-                                    <a href=""> <i class="bi bi-linkedin"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- End Team Member -->
-
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-                        <div class="team-member d-flex align-items-start">
                             <div class="pic"><img src="{{ asset('landing_assets/img/team/team-4.jpg') }}" class="img-fluid"
                                     alt=""></div>
                             <div class="member-info">
                                 <h4>Naufal Arig Dzaki R.H.</h4>
-                                <span>Accountant</span>
-                                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                                <span>Chief Technical Officer</span>
+                                <p>"Aku butuh medkit, sabar...."</p>
                                 <div class="social">
                                     <a href=""><i class="bi bi-twitter"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -706,7 +437,7 @@
                                 <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis
                                         hendrerit</span></li>
                             </ul>
-                            <a href="#" class="buy-btn">Buy Now</a>
+                            <a href="#" class="buy-btn">Contact Us</a>
                         </div>
                     </div><!-- End Pricing Item -->
 
@@ -721,7 +452,7 @@
                                 <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
                                 <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
                             </ul>
-                            <a href="#" class="buy-btn">Buy Now</a>
+                            <a href="#" class="buy-btn">Contact Us</a>
                         </div>
                     </div><!-- End Pricing Item -->
 
@@ -736,7 +467,7 @@
                                 <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
                                 <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
                             </ul>
-                            <a href="#" class="buy-btn">Buy Now</a>
+                            <a href="#" class="buy-btn">Contact Us</a>
                         </div>
                     </div><!-- End Pricing Item -->
 
@@ -746,244 +477,13 @@
 
         </section><!-- /Pricing Section -->
 
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="testimonials section">
-
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Testimonials</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-            </div><!-- End Section Title -->
-
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="swiper">
-                    <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="{{ asset('landing_assets/img/testimonials/testimonials-1.jpg') }}" class="testimonial-img"
-                                    alt="">
-                                <h3>Saul Goodman</h3>
-                                <h4>Ceo &amp; Founder</h4>
-                                <div class="stars">
-                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i>
-                                </div>
-                                <p>
-                                    <i class="bi bi-quote quote-icon-left"></i>
-                                    <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
-                                        suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et.
-                                        Maecen aliquam, risus at semper.</span>
-                                    <i class="bi bi-quote quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="{{ asset('landing_assets/img/testimonials/testimonials-2.jpg') }}" class="testimonial-img"
-                                    alt="">
-                                <h3>Sara Wilsson</h3>
-                                <h4>Designer</h4>
-                                <div class="stars">
-                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i>
-                                </div>
-                                <p>
-                                    <i class="bi bi-quote quote-icon-left"></i>
-                                    <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum
-                                        quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat
-                                        irure amet legam anim culpa.</span>
-                                    <i class="bi bi-quote quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="{{ asset('landing_assets/img/testimonials/testimonials-3.jpg') }}" class="testimonial-img"
-                                    alt="">
-                                <h3>Jena Karlis</h3>
-                                <h4>Store Owner</h4>
-                                <div class="stars">
-                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i>
-                                </div>
-                                <p>
-                                    <i class="bi bi-quote quote-icon-left"></i>
-                                    <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla
-                                        quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore
-                                        quis sint minim.</span>
-                                    <i class="bi bi-quote quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="{{ asset('landing_assets/img/testimonials/testimonials-4.jpg') }}" class="testimonial-img"
-                                    alt="">
-                                <h3>Matt Brandon</h3>
-                                <h4>Freelancer</h4>
-                                <div class="stars">
-                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i>
-                                </div>
-                                <p>
-                                    <i class="bi bi-quote quote-icon-left"></i>
-                                    <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim
-                                        fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore
-                                        quem dolore labore illum veniam.</span>
-                                    <i class="bi bi-quote quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <img src="{{ asset('landing_assets/img/testimonials/testimonials-5.jpg') }}" class="testimonial-img"
-                                    alt="">
-                                <h3>John Larson</h3>
-                                <h4>Entrepreneur</h4>
-                                <div class="stars">
-                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                        class="bi bi-star-fill"></i>
-                                </div>
-                                <p>
-                                    <i class="bi bi-quote quote-icon-left"></i>
-                                    <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor
-                                        noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam
-                                        esse veniam culpa fore nisi cillum quid.</span>
-                                    <i class="bi bi-quote quote-icon-right"></i>
-                                </p>
-                            </div>
-                        </div><!-- End testimonial item -->
-
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-
-            </div>
-
-        </section><!-- /Testimonials Section -->
-
-        <!-- Faq 2 Section -->
-        <section id="faq-2" class="faq-2 section">
-
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Frequently Asked Questions</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                    fugiat sit in iste officiis commodi quidem hic quas.</p>
-            </div><!-- End Section Title -->
-
-            <div class="container">
-
-                <div class="row justify-content-center">
-
-                    <div class="col-lg-10">
-
-                        <div class="faq-container">
-
-                            <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
-                                <i class="faq-icon bi bi-question-circle"></i>
-                                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
-                                <div class="faq-content">
-                                    <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
-                                        laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor
-                                        rhoncus dolor purus non.</p>
-                                </div>
-                                <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
-
-                            <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
-                                <i class="faq-icon bi bi-question-circle"></i>
-                                <h3>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
-                                <div class="faq-content">
-                                    <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
-                                        interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
-                                        scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
-                                        Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                                </div>
-                                <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
-
-                            <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
-                                <i class="faq-icon bi bi-question-circle"></i>
-                                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
-                                <div class="faq-content">
-                                    <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.
-                                        Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl
-                                        suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis
-                                        convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                                    </p>
-                                </div>
-                                <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
-
-                            <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
-                                <i class="faq-icon bi bi-question-circle"></i>
-                                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
-                                <div class="faq-content">
-                                    <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
-                                        interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
-                                        scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
-                                        Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                                </div>
-                                <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
-
-                            <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
-                                <i class="faq-icon bi bi-question-circle"></i>
-                                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h3>
-                                <div class="faq-content">
-                                    <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse
-                                        in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl
-                                        suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-                                    </p>
-                                </div>
-                                <i class="faq-toggle bi bi-chevron-right"></i>
-                            </div><!-- End Faq item-->
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section><!-- /Faq 2 Section -->
-
         <!-- Contact Section -->
         <section id="contact" class="contact section">
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Contact</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                <p>If you want get qouestions, please contact us</p>
             </div><!-- End Section Title -->
 
             <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -997,7 +497,7 @@
                                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                                 <div>
                                     <h3>Address</h3>
-                                    <p>A108 Adam Street, New York, NY 535022</p>
+                                    <p>Makkah, Saudi Arabia</p>
                                 </div>
                             </div><!-- End Info Item -->
 
@@ -1005,7 +505,7 @@
                                 <i class="bi bi-telephone flex-shrink-0"></i>
                                 <div>
                                     <h3>Call Us</h3>
-                                    <p>+1 5589 55488 55</p>
+                                    <p>+65 99999999999</p>
                                 </div>
                             </div><!-- End Info Item -->
 
@@ -1013,7 +513,7 @@
                                 <i class="bi bi-envelope flex-shrink-0"></i>
                                 <div>
                                     <h3>Email Us</h3>
-                                    <p>info@example.com</p>
+                                    <p>Looooo@gmail.com</p>
                                 </div>
                             </div><!-- End Info Item -->
 
@@ -1096,11 +596,11 @@
             <div class="row gy-4">
                 <div class="col-lg-4 col-md-6 footer-about">
                     <a href="index.html" class="d-flex align-items-center">
-                        <span class="sitename">Arsha</span>
+                        <span class="sitename">IoTrove</span>
                     </a>
                     <div class="footer-contact pt-3">
-                        <p>A108 Adam Street</p>
-                        <p>New York, NY 535022</p>
+                        <p>A108 Tanul Street</p>
+                        <p>Makkah, Saudi Arabia</p>
                         <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
                         <p><strong>Email:</strong> <span>info@example.com</span></p>
                     </div>
@@ -1141,14 +641,14 @@
         </div>
 
         <div class="container copyright text-center mt-4">
-            <p>© <span>Copyright</span> <strong class="px-1 sitename">Arsha</strong> <span>All Rights Reserved</span>
+            <p>© <span>Copyright</span> <strong class="px-1 sitename">IoTrove</strong> <span>All Rights Reserved</span>
             </p>
             <div class="credits">
                 <!-- All the links in the footer should remain intact. -->
                 <!-- You can delete the links only if you've purchased the pro version. -->
                 <!-- Licensing information: https://bootstrapmade.com/license/ -->
                 <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                Designed by <a href="https://bootstrapmade.com/">Adiningrat Iqbal Zulmi</a>
             </div>
         </div>
 

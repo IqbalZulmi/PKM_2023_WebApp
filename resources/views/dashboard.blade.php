@@ -1,13 +1,16 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navigation Side Bar</title>
+    <title>Navigation Side Bar with Footer</title>
     <link rel="stylesheet" href="{{ asset('dashboard_assets/css/main.css') }}">
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
+    <nav class="sidebar">
       <ul>
         <li>
           <a href="" class="logo">
@@ -53,6 +56,11 @@
         </li>
       </ul>
     </nav>
+
+    <div class="sidebar-content">
+        <p>lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+    </div>
     <script>
       feather.replace();
     </script>

@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', ([HumidityController::class,'getHumidity']))
 // ->name('landingPage');
 
-// Route::get('/', [LoginController::class, 'Login'])
+// Route::get('/login', [LoginController::class, 'Login'])
 // ->name('login');
 
 Route::get('/', [DashboardController::class, 'Home'])

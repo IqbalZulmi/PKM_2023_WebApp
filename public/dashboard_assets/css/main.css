@@ -74,3 +74,38 @@ nav:hover {
   position: absolute;
   bottom: 0;
 }
+
+/* Pada media query dengan lebar minimal 768px */
+@media (min-width: 768px) {
+    /* Ketika sidebar diperluas */
+    .sidebar {
+      position: fixed;
+      width: 90px;
+      height: 100vh;
+      background-color: #f0f0f0;
+      transition: width 0.5s;
+    }
+
+    /* Konten bergerak sejauh lebar sidebar yang baru */
+    .sidebar-content {
+      margin-left: 200px;
+      transition: margin-left 0.5s;
+    }
+  }
+
+  /* Pada media query dengan lebar maksimal 767px */
+  @media (max-width: 767px) {
+    /* Ketika sidebar disusutkan */
+    .sidebar {
+      width: 100%;
+      height: auto;
+      background-color: transparent;
+      transition: width 0.5s;
+    }
+
+    /* Konten kembali ke posisi awal */
+    .sidebar-content {
+      margin-left: 100;
+      transition: margin-left 0.5s;
+    }
+  }
