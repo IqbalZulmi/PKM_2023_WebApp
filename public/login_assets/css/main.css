@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #686c78;
+  background-color: whitesmoke;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,6 +22,10 @@ h1 {
   letter-spacing: -1.5px;
   margin: 0;
   margin-bottom: 15px;
+}
+
+h1.text-green{
+    color: #9acd32;
 }
 
 h1.title {
@@ -54,7 +58,7 @@ a {
 }
 
 a:hover {
-  color: #4bb6b7;
+  color: yellowgreen;
 }
 
 .content {
@@ -86,8 +90,8 @@ a:hover {
 button {
   position: relative;
   border-radius: 20px;
-  border: 1px solid #686c78;
-  background-color: #686c78;
+  border: 1px solid #9acd32;
+  background-color: #9acd32;
   color: #fff;
   font-size: 15px;
   font-weight: 700;
@@ -192,7 +196,7 @@ input {
 
 .form-control2 span {
   position: absolute;
-  border-bottom: 3px solid #2691d9;
+  border-bottom: 3px solid yellowgreen;
   left: 0;
   bottom: 8px;
   width: 0%;
@@ -213,7 +217,7 @@ input {
 
 .form-control span {
   position: absolute;
-  border-bottom: 3px solid #2691d9;
+  border-bottom: 3px solid yellowgreen;
   left: 0;
   bottom: 8px;
   width: 0%;
@@ -235,7 +239,7 @@ input {
 
 .form-control2 span {
   position: absolute;
-  border-bottom: 3px solid #2691d9;
+  border-bottom: 3px solid yellowgreen;
   left: 0;
   bottom: 8px;
   width: 0%;
@@ -301,7 +305,7 @@ input {
 }
 
 .overlay {
-  background-image: url("https://images.unsplash.com/photo-1621360841013-c7683c659ec6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80");
+  background-image: url("https://asiatoday.id/wp-content/uploads/2021/10/PicsArt_10-24-08.57.49.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
@@ -323,8 +327,8 @@ input {
   bottom: 0;
   background: linear-gradient(
     to top,
-    rgba(46, 94, 109, 0.4) 40%,
-    rgba(46, 94, 109, 0)
+    rgba(154, 205, 50,0.4) 40%,
+    rgba(154, 205, 50, 0)
   );
 }
 
@@ -381,6 +385,6 @@ input {
 }
 
 .social-container a:hover {
-  border: 1px solid #4bb6b7;
+  border: 1px solid yellowgreen;
 }
 

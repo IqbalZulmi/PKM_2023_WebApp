@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\HumidityController;
+
+use App\Http\Controllers\LandingController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
@@ -15,13 +16,14 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/', ([LandingController::class,'showLandingPage']))
+->name('landingPage');
 
-// Route::get('/', ([HumidityController::class,'getHumidity']))
-// ->name('landingPage');
+Route::get('/login', [LoginController::class, 'showLoginPage'])
+->name('loginPage');
 
-// Route::get('/login', [LoginController::class, 'Login'])
-// ->name('login');
+Route::get('/dashboard', [DashboardController::class, 'showDashboardPage'])
+->name('dashboardPage');
 
-Route::get('/', [DashboardController::class, 'Home'])
- ->name('Home');
-
+Route::get('/dashboard/detail', [DashboardController::class, 'showDashboardDetailPage'])
+->name('dashboardDetailPage');

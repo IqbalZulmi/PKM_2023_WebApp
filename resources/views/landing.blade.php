@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>IoTrove</title>
+    <title>IOTROVE</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="{{ asset('landing_assets/img/favicon.png') }}" rel="icon">
-    <link href="{{ asset('landing_assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+    <link href="{{ asset('assets/img/logo.png') }}" rel="icon">
+    <link href="{{ asset('assets/img/logo.png') }}" rel="apple-touch-icon">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -47,34 +47,14 @@
                     <li><a href="#hero" class="">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#pricing">Pricing</a></li>
-                    <li class="dropdown"><a href="#"><span>Dropdown</span> <i
-                                class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                            <li><a href="#">Dropdown 1</a></li>
-                            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                                        class="bi bi-chevron-down toggle-dropdown"></i></a>
-                                <ul>
-                                    <li><a href="#">Deep Dropdown 1</a></li>
-                                    <li><a href="#">Deep Dropdown 2</a></li>
-                                    <li><a href="#">Deep Dropdown 3</a></li>
-                                    <li><a href="#">Deep Dropdown 4</a></li>
-                                    <li><a href="#">Deep Dropdown 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Dropdown 2</a></li>
-                            <li><a href="#">Dropdown 3</a></li>
-                            <li><a href="#">Dropdown 4</a></li>
-                        </ul>
-                    </li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
 
-            <a class="btn-getstarted" href="/login">Get Started</a>
+            <a class="btn-getstarted" href="{{ route('loginPage') }}">Get Started</a>
 
         </div>
     </header>
@@ -91,8 +71,9 @@
                         <h1 class="">
                             IoT-based Integrated Multi-Sensor System to Maintain Mangrove
                             Ecosystem Resilience</h1>
-                            <br>
-                        <p class="">Smart IoT that aims to help mangrove <br> forest managers monitor mangrove ecosystems.</p>
+                        <br>
+                        <p class="">Smart IoT that aims to help mangrove <br> forest managers monitor mangrove
+                            ecosystems.</p>
                         <div class="d-flex">
                             <a href="#about" class="btn-get-started">Get Started</a>
                             <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
@@ -101,12 +82,15 @@
                         </div>
                         <br>
                         <ul style="list-style: none">
-                            <li><i class="bi bi-check2-circle"></i> <span>Using web-based and multi-sensor systems</span></li>
-                            <li><i class="bi bi-check2-circle"></i> <span>Monitoring Mangrove Ecosystems in Real-time</span></li>
+                            <li><i class="bi bi-check2-circle"></i> <span>Using web-based and multi-sensor
+                                    systems</span></li>
+                            <li><i class="bi bi-check2-circle"></i> <span>Monitoring Mangrove Ecosystems in
+                                    Real-time</span></li>
                         </ul>
                     </div>
                     <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
-                        <img src="{{ asset('landing_assets/img/hero-img.png') }}" class="img-fluid animated" alt="">
+                        <img src="{{ asset('landing_assets/img/hero-img.png') }}" class="img-fluid animated"
+                            alt="">
                     </div>
                 </div>
             </div>
@@ -157,22 +141,22 @@
             }
           </script>
                     <div class="swiper-wrapper align-items-center">
-                        <div class="swiper-slide"><img src="{{ asset('landing_assets/img/clients/client-1.png') }}" class="img-fluid"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="{{ asset('landing_assets/img/clients/client-2.png') }}" class="img-fluid"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="{{ asset('landing_assets/img/clients/client-3.png') }}" class="img-fluid"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="{{ asset('landing_assets/img/clients/client-4.png') }}" class="img-fluid"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="{{ asset('landing_assets/img/clients/client-5.png') }}" class="img-fluid"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="{{ asset('landing_assets/img/clients/client-6.png') }}" class="img-fluid"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="{{ asset('landing_assets/img/clients/client-7.png') }}" class="img-fluid"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="{{ asset('landing_assets/img/clients/client-8.png') }}" class="img-fluid"
-                                alt=""></div>
+                        <div class="swiper-slide"><img src="{{ asset('landing_assets/img/clients/client-1.png') }}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{ asset('landing_assets/img/clients/bootstrap.png') }}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{ asset('landing_assets/img/clients/client-3.png') }}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{ asset('landing_assets/img/clients/github.png') }}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{ asset('landing_assets/img/clients/mysql.png') }}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{ asset('landing_assets/img/clients/phpmyadmin.png') }}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{ asset('landing_assets/img/clients/chatgpt.png') }}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{ asset('landing_assets/img/clients/arduino.png') }}"
+                                class="img-fluid" alt=""></div>
                     </div>
                 </div>
 
@@ -191,17 +175,25 @@
                 <div class="row gy-4">
                     <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
                         <p>
-                            Welcome to our initiative, "Integrated Multi-Sensor System Based on IoT to Safeguard Mangrove Ecosystem Resilience in Batam City Against Environmental Pollution Threats." We are a dedicated team of environmental scientists, technology experts, and community activists committed to protecting and preserving the vital mangrove ecosystems in Batam City.
+                            Welcome to our initiative, "Integrated Multi-Sensor System Based on IoT to Safeguard
+                            Mangrove Ecosystem Resilience in Batam City Against Environmental Pollution Threats." We are
+                            a dedicated team of environmental scientists, technology experts, and community activists
+                            committed to protecting and preserving the vital mangrove ecosystems in Batam City.
                         </p>
                         <ul>
-                            <li><i class="bi bi-check2-circle"></i> <span>We utilize labor and resources efficiently to provide the best outcomes.</span></li>
-                            <li><i class="bi bi-check2-circle"></i> <span>Our efforts reduce the impact of environmental pollutants on mangrove ecosystems.</span></li>
-                            <li><i class="bi bi-check2-circle"></i> <span>We are dedicated to continuous improvement and innovation in environmental protection.</span></li>
+                            <li><i class="bi bi-check2-circle"></i> <span>We utilize labor and resources efficiently to
+                                    provide the best outcomes.</span></li>
+                            <li><i class="bi bi-check2-circle"></i> <span>Our efforts reduce the impact of
+                                    environmental pollutants on mangrove ecosystems.</span></li>
+                            <li><i class="bi bi-check2-circle"></i> <span>We are dedicated to continuous improvement
+                                    and innovation in environmental protection.</span></li>
                         </ul>
                     </div>
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                        <p>IOTROVE is a multi-sensor IoT tool designed to directly monitor the environmental conditions surrounding the mangrove forests, integrated with a user-friendly website.</p>
-                        <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                        <p>IOTROVE is a multi-sensor IoT tool designed to directly monitor the environmental conditions
+                            surrounding the mangrove forests, integrated with a user-friendly website.</p>
+                        <a href="#" class="read-more"><span>Read More</span><i
+                                class="bi bi-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -214,37 +206,50 @@
                 <div class="row gy-4">
                     <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
                         <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
-                            <h3 class=""><span class="">Integrated Multi-Sensor System Based on IoT to </span><strong>Safeguard Mangrove Ecosystem Resilience in Batam City Against Environmental Pollution Threats</strong></h3>
+                            <h3 class=""><span class="">Integrated Multi-Sensor System Based on IoT to
+                                </span><strong>Safeguard Mangrove Ecosystem Resilience in Batam City Against
+                                    Environmental Pollution Threats</strong></h3>
                             <p class="">
-                                Welcome to our initiative, "Integrated Multi-Sensor System Based on IoT to Safeguard Mangrove Ecosystem Resilience in Batam City Against Environmental Pollution Threats." We are a dedicated team of environmental scientists, technology experts, and community activists committed to protecting and preserving the vital mangrove ecosystems in Batam City.
+                                Welcome to our initiative, "Integrated Multi-Sensor System Based on IoT to Safeguard
+                                Mangrove Ecosystem Resilience in Batam City Against Environmental Pollution Threats." We
+                                are a dedicated team of environmental scientists, technology experts, and community
+                                activists committed to protecting and preserving the vital mangrove ecosystems in Batam
+                                City.
                             </p>
                         </div>
                         <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
                             <div class="faq-item faq-active">
                                 <h3><span>01</span> How does the integrated multi-sensor system work?</h3>
                                 <div class="faq-content">
-                                    <p>The system employs various sensors to monitor environmental conditions, such as water quality, soil moisture, and air pollutants. These sensors are connected through IoT technology to provide real-time data and alerts.</p>
+                                    <p>The system employs various sensors to monitor environmental conditions, such as
+                                        water quality, soil moisture, and air pollutants. These sensors are connected
+                                        through IoT technology to provide real-time data and alerts.</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
                             <div class="faq-item">
                                 <h3><span>02</span> What are the benefits of using this system?</h3>
                                 <div class="faq-content">
-                                    <p>This system helps in early detection of pollution threats, allowing for timely intervention to protect the mangrove ecosystem. It also supports data-driven decision-making for environmental management.</p>
+                                    <p>This system helps in early detection of pollution threats, allowing for timely
+                                        intervention to protect the mangrove ecosystem. It also supports data-driven
+                                        decision-making for environmental management.</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
                             <div class="faq-item">
                                 <h3><span>03</span> Who can access the data collected by the system?</h3>
                                 <div class="faq-content">
-                                    <p>The data is accessible to environmental authorities, researchers, and the local community through a user-friendly website. This transparency ensures community involvement in conservation efforts.</p>
+                                    <p>The data is accessible to environmental authorities, researchers, and the local
+                                        community through a user-friendly website. This transparency ensures community
+                                        involvement in conservation efforts.</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
                         </div>
                     </div>
                     <div class="col-lg-5 order-1 order-lg-2 why-us-img">
-                        <img src="{{ asset('landing_assets/img/why-us.png') }}" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="{{ asset('landing_assets/img/why-us.png') }}" class="img-fluid" alt=""
+                            data-aos="zoom-in" data-aos-delay="100">
                     </div>
                 </div>
             </div>
@@ -257,7 +262,8 @@
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Our Services</h2>
-                <p>We offer a range of services to support the monitoring and protection of mangrove ecosystems using advanced IoT technologies.</p>
+                <p>We offer a range of services to support the monitoring and protection of mangrove ecosystems using
+                    advanced IoT technologies.</p>
             </div><!-- End Section Title -->
             <div class="container">
                 <div class="row gy-4">
@@ -265,7 +271,8 @@
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-activity icon"></i></div>
                             <h4><a href="service-details.html" class="stretched-link">Real-time Monitoring</a></h4>
-                            <p>We provide real-time environmental monitoring using a network of IoT sensors to track water quality, air quality, and soil conditions.</p>
+                            <p>We provide real-time environmental monitoring using a network of IoT sensors to track
+                                water quality, air quality, and soil conditions.</p>
                         </div>
                     </div><!-- End Service Item -->
 
@@ -273,7 +280,8 @@
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
                             <h4><a href="service-details.html" class="stretched-link">Data Analysis</a></h4>
-                            <p>Our advanced data analysis tools help interpret sensor data, providing insights into environmental trends and pollution levels.</p>
+                            <p>Our advanced data analysis tools help interpret sensor data, providing insights into
+                                environmental trends and pollution levels.</p>
                         </div>
                     </div><!-- End Service Item -->
 
@@ -281,7 +289,8 @@
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-broadcast icon"></i></div>
                             <h4><a href="service-details.html" class="stretched-link">Alert Systems</a></h4>
-                            <p>We offer alert systems that notify stakeholders of critical changes in environmental conditions, enabling prompt response and action.</p>
+                            <p>We offer alert systems that notify stakeholders of critical changes in environmental
+                                conditions, enabling prompt response and action.</p>
                         </div>
                     </div><!-- End Service Item -->
 
@@ -289,7 +298,8 @@
                         <div class="service-item position-relative">
                             <div class="icon"><i class="bi bi-broadcast icon"></i></div>
                             <h4><a href="service-details.html" class="stretched-link">Community Engagement</a></h4>
-                            <p>We engage with local communities to educate and involve them in the conservation efforts, fostering a collaborative approach to environmental protection.</p>
+                            <p>We engage with local communities to educate and involve them in the conservation efforts,
+                                fostering a collaborative approach to environmental protection.</p>
                         </div>
                     </div><!-- End Service Item -->
                 </div>
@@ -300,19 +310,19 @@
         <!-- Call To Action Section -->
         <section id="call-to-action" class="call-to-action section">
 
-            <img src="{{ asset('landing_assets/img/cta-bg.jpg') }}" alt="">
+            <img src="{{ asset('landing_assets/img/mangrove.jpeg') }}" alt="Mangrove Plantation">
 
             <div class="container">
 
                 <div class="row" data-aos="zoom-in" data-aos-delay="90">
                     <div class="col-xl-9 text-center text-xl-start">
-                        <h3>Call To Action</h3>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                            mollit anim id est laborum.</p>
+                        <h3>Join Our Mangrove Planting Initiative</h3>
+                        <p>Help us preserve coastal ecosystems by participating in our mangrove planting program. Every
+                            tree you plant will help prevent erosion, improve water quality, and provide habitat for
+                            various marine species. Let's protect the environment together for future generations!</p>
                     </div>
                     <div class="col-xl-3 cta-btn-container text-center">
-                        <a class="cta-btn align-middle" href="#">Call To Action</a>
+                        <a class="cta-btn align-middle" href="#">Join Now</a>
                     </div>
                 </div>
 
@@ -326,17 +336,15 @@
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Team</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                <p>Meet the dedicated professionals who drive our success and make our mission a reality. Their expertise and passion are the foundation of everything we do.</p>
             </div><!-- End Section Title -->
 
             <div class="container">
-
                 <div class="row gy-4">
-
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="90">
                         <div class="team-member d-flex align-items-start">
-                            <div class="pic"><img src="{{ asset('landing_assets/img/team/team-1.jpg') }}" class="img-fluid"
-                                    alt=""></div>
+                            <div class="pic"><img src="{{ asset('landing_assets/img/team/team-1.jpg') }}"
+                                    class="img-fluid" alt=""></div>
                             <div class="member-info">
                                 <h4>Alfaturrhman</h4>
                                 <span>Chief Executive Officer</span>
@@ -353,12 +361,12 @@
 
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="team-member d-flex align-items-start">
-                            <div class="pic"><img src="{{ asset('landing_assets/img/team/team-2.jpg') }}" class="img-fluid"
-                                    alt=""></div>
+                            <div class="pic"><img src="{{ asset('landing_assets/img/team/team-2.jpg') }}"
+                                    class="img-fluid" alt=""></div>
                             <div class="member-info">
                                 <h4>A.Iqbal Zulmi</h4>
                                 <span>Chief Technical Officer</span>
-                                <p>"Why you like that lah"</p>
+                                <p>"Masa lalu itu tak perlu dipelukan tapi dijadikan pelajaran"</p>
                                 <div class="social">
                                     <a href=""><i class="bi bi-twitter"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -371,8 +379,8 @@
 
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="team-member d-flex align-items-start">
-                            <div class="pic"><img src="{{ asset('landing_assets/img/team/team-3.jpg') }}" class="img-fluid"
-                                    alt=""></div>
+                            <div class="pic"><img src="{{ asset('landing_assets/img/team/team-3.jpg') }}"
+                                    class="img-fluid" alt=""></div>
                             <div class="member-info">
                                 <h4>Bustanul Ariffim</h4>
                                 <span>Chief Technical Officer</span>
@@ -389,8 +397,8 @@
 
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="team-member d-flex align-items-start">
-                            <div class="pic"><img src="{{ asset('landing_assets/img/team/team-4.jpg') }}" class="img-fluid"
-                                    alt=""></div>
+                            <div class="pic"><img src="{{ asset('landing_assets/img/team/team-4.jpg') }}"
+                                    class="img-fluid" alt=""></div>
                             <div class="member-info">
                                 <h4>Naufal Arig Dzaki R.H.</h4>
                                 <span>Chief Technical Officer</span>
@@ -497,7 +505,7 @@
                                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                                 <div>
                                     <h3>Address</h3>
-                                    <p>Makkah, Saudi Arabia</p>
+                                    <p>Batam, Kepulauan Riau</p>
                                 </div>
                             </div><!-- End Info Item -->
 
@@ -505,7 +513,7 @@
                                 <i class="bi bi-telephone flex-shrink-0"></i>
                                 <div>
                                     <h3>Call Us</h3>
-                                    <p>+65 99999999999</p>
+                                    <p>+62 85676223443</p>
                                 </div>
                             </div><!-- End Info Item -->
 
@@ -513,7 +521,7 @@
                                 <i class="bi bi-envelope flex-shrink-0"></i>
                                 <div>
                                     <h3>Email Us</h3>
-                                    <p>Looooo@gmail.com</p>
+                                    <p>IoT  roves@gmail.com</p>
                                 </div>
                             </div><!-- End Info Item -->
 
@@ -573,25 +581,6 @@
     </main>
 
     <footer id="footer" class="footer">
-
-        <div class="footer-newsletter">
-            <div class="container">
-                <div class="row justify-content-center text-center">
-                    <div class="col-lg-6">
-                        <h4>Join Our Newsletter</h4>
-                        <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-                        <form action="forms/newsletter.php" method="post" class="php-email-form">
-                            <div class="newsletter-form"><input type="email" name="email"><input type="submit"
-                                    value="Subscribe"></div>
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="container footer-top">
             <div class="row gy-4">
                 <div class="col-lg-4 col-md-6 footer-about">
@@ -609,26 +598,15 @@
                 <div class="col-lg-2 col-md-3 footer-links">
                     <h4>Useful Links</h4>
                     <ul>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-2 col-md-3 footer-links">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="#hero">Home</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="#about">About us</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="#services">Services</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-4 col-md-12">
                     <h4>Follow Us</h4>
-                    <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+                    <p>Stay connected with us through social media! Follow our journey and get the latest updates, insights, and behind-the-scenes content.</p>
                     <div class="social-links d-flex">
                         <a href=""><i class="bi bi-twitter"></i></a>
                         <a href=""><i class="bi bi-facebook"></i></a>
@@ -648,7 +626,7 @@
                 <!-- You can delete the links only if you've purchased the pro version. -->
                 <!-- Licensing information: https://bootstrapmade.com/license/ -->
                 <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-                Designed by <a href="https://bootstrapmade.com/">Adiningrat Iqbal Zulmi</a>
+                Designed by <a href="https://bootstrapmade.com/">IOTROVE Team</a>
             </div>
         </div>
 
