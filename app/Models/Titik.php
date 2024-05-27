@@ -2,17 +2,22 @@
 
 namespace App\Models;
 
-use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class humidity extends Model
+class Titik extends Model
 {
     use HasFactory;
 
-    protected $table = 'humidity';
+    protected $table = 'titiks';
+
     protected $primaryKey = 'id';
+
     protected $fillable = [
-        'humidity',
-    ];
+        'nama',
+    ] ;
+
+    public function sensor(){
+        return $this->hasMany(Sensor::class,'id_titik');
+    }
 }

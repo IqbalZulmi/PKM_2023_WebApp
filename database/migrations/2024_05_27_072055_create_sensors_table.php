@@ -11,9 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('humidity', function (Blueprint $table) {
+        Schema::create('sensors', function (Blueprint $table) {
             $table->id();
-            $table->string('humidity');
+            $table->unsignedBigInteger('id_titik');
+            $table->foreign('id_titik')->references('id')->on('titiks')->onDelete('cascade')->onUpdate('cascade');;
+            $table->float('turbidity');
+            $table->float('ph');
+            $table->float('temperature');
             $table->timestamps();
         });
     }
@@ -23,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('humidity');
+        Schema::dropIfExists('sensors');
     }
 };

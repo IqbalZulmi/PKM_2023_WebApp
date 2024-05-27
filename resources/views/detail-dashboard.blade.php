@@ -7,7 +7,7 @@
     <main id="main" class="main">
 
         <div class="pagetitle">
-            <h1>Detail Titik 1</h1>
+            <h1>Detail Titik {{ $dataTerbaru->titik->nama }}</h1>
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -28,14 +28,15 @@
                                 <div class='semi-circle d-flex justify-content-center align-items-end'>
                                     <div class="text-circle d-flex justify-content-center align-items-center">
                                         <div class="h4 mt-3">
-                                            74%
+                                            {{ $dataTerbaru->turbidity }}
                                         </div>
                                     </div>
                                 </div>
                                 <div class="ps-3">
                                     <h6 class="fs-4">Last Update</h6>
-                                    <span class="small pt-1 fw-bold">12 May 2024</span>
-                                    <span class="text-muted small pt-2 ps-1">02:00:00</span>
+                                    <span class="small pt-1 fw-bold">{{ $dataTerbaru->created_at->format('d F y') }}</span>
+                                    <span
+                                        class="text-muted small pt-2 ps-1">{{ $dataTerbaru->created_at->format('h:i:s') }}</span>
                                 </div>
                             </div>
                         </div>
@@ -51,14 +52,15 @@
                                 <div class='semi-circle d-flex justify-content-center align-items-end'>
                                     <div class="text-circle d-flex justify-content-center align-items-center">
                                         <div class="h4 mt-3">
-                                            74%
+                                            {{ $dataTerbaru->ph }}
                                         </div>
                                     </div>
                                 </div>
                                 <div class="ps-3">
                                     <h6 class="fs-4">Last Update</h6>
-                                    <span class="small pt-1 fw-bold">12 May 2024</span>
-                                    <span class="text-muted small pt-2 ps-1">02:00:00</span>
+                                    <span class="small pt-1 fw-bold">{{ $dataTerbaru->created_at->format('d F y') }}</span>
+                                    <span
+                                        class="text-muted small pt-2 ps-1">{{ $dataTerbaru->created_at->format('h:i:s') }}</span>
                                 </div>
                             </div>
                         </div>
@@ -74,14 +76,15 @@
                                 <div class='semi-circle d-flex justify-content-center align-items-end'>
                                     <div class="text-circle d-flex justify-content-center align-items-center">
                                         <div class="h4 mt-3">
-                                            74%
+                                            {{ $dataTerbaru->temperature }}
                                         </div>
                                     </div>
                                 </div>
                                 <div class="ps-3">
                                     <h6 class="fs-4">Last Update</h6>
-                                    <span class="small pt-1 fw-bold">12 May 2024</span>
-                                    <span class="text-muted small pt-2 ps-1">02:00:00</span>
+                                    <span class="small pt-1 fw-bold">{{ $dataTerbaru->created_at->format('d F y') }}</span>
+                                    <span
+                                        class="text-muted small pt-2 ps-1">{{ $dataTerbaru->created_at->format('h:i:s') }}</span>
                                 </div>
                             </div>
                         </div>
@@ -111,6 +114,17 @@
     @include('components.footer')
 @endsection
 
+@php
+    $formattedData = $empatDataTerbaru->map(function ($item) {
+        return [
+            'turbidity' => $item->turbidity,
+            'ph' => $item->ph,
+            'temperature' => $item->temperature,
+            'created_at' => $item->created_at->format('d F Y - H:i:s'),
+        ];
+    });
+@endphp
+
 @push('js')
     <script>
         const ctx = document.getElementById('reportschart');
@@ -118,24 +132,24 @@
         new Chart(ctx, {
             type: 'line',
             data: {
-                labels: ['00:00:00', '06:00:00', '12:00:00', '18:00:00'],
+                labels: @json($formattedData->pluck('created_at')),
                 datasets: [{
                         label: 'Turbidity',
-                        data: [12, 19, 3, 5, 2, 3],
+                        data: @json($formattedData->pluck('turbidity')),
                         borderColor: 'rgb(255, 99, 132)',
                         borderWidth: 1,
                         fill: false
                     },
                     {
                         label: 'Water pH',
-                        data: [8, 14, 5, 2, 10, 7],
+                        data: @json($formattedData->pluck('ph')),
                         borderColor: 'rgb(54, 162, 235)',
                         borderWidth: 1,
                         fill: false
                     },
                     {
                         label: 'Water Temperature',
-                        data: [15, 10, 8, 6, 3, 4],
+                        data: @json($formattedData->pluck('temperature')),
                         borderColor: 'rgb(75, 192, 192)',
                         borderWidth: 1,
                         fill: false

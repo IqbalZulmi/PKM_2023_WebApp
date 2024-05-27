@@ -18,132 +18,38 @@
 
         <section class="section dashboard">
             <div class="row">
-                <div class="col-xxl-4 col-md-6">
-                    <div class="card info-card sales-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Last Update : 13/02/2004</h5>
-                            <div class="d-flex align-items-center">
-                                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                    <i class="bi bi-motherboard"></i>
+                @forelse ($dataTitik as $index => $data)
+                    <div class="col-xxl-4 col-md-6">
+                        <div class="card info-card sales-card">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Last Update :
+                                    @if ($data->sensor->isNotEmpty())
+                                        {{ \Carbon\Carbon::parse($data->sensor->sortByDesc('created_at')->first()->created_at)->format('H:i | d/m/Y') }}
+                                    @else
+                                        No sensors available
+                                    @endif
+                                </h5>
+                                <div class="d-flex align-items-center">
+                                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-motherboard"></i>
+                                    </div>
+                                    <div class="ps-3">
+                                        <h6>{{ $data->nama }}</h6>
+                                    </div>
                                 </div>
-                                <div class="ps-3">
-                                    <h6>Titik 1</h6>
+                                <div class="d-flex justify-content-end">
+                                    <a class="btn btn-main" href="{{ route('dashboardDetailPage',['id_titik' => $data->id]) }}">
+                                        More Detail
+                                        <i class="bi bi-arrow-right"></i>
+                                    </a>
                                 </div>
-                            </div>
-                            <div class="d-flex justify-content-end">
-                                <a class="btn btn-main">
-                                    More Detail
-                                    <i class="bi bi-arrow-right"></i>
-                                </a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xxl-4 col-md-6">
-                    <div class="card info-card sales-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Last Update : 13/02/2004</h5>
-                            <div class="d-flex align-items-center">
-                                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                    <i class="bi bi-motherboard"></i>
-                                </div>
-                                <div class="ps-3">
-                                    <h6>Titik 1</h6>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-end">
-                                <a class="btn btn-main">
-                                    More Detail
-                                    <i class="bi bi-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-4 col-md-6">
-                    <div class="card info-card sales-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Last Update : 13/02/2004</h5>
-                            <div class="d-flex align-items-center">
-                                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                    <i class="bi bi-motherboard"></i>
-                                </div>
-                                <div class="ps-3">
-                                    <h6>Titik 1</h6>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-end">
-                                <a class="btn btn-main">
-                                    More Detail
-                                    <i class="bi bi-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-4 col-md-6">
-                    <div class="card info-card sales-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Last Update : 13/02/2004</h5>
-                            <div class="d-flex align-items-center">
-                                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                    <i class="bi bi-motherboard"></i>
-                                </div>
-                                <div class="ps-3">
-                                    <h6>Titik 1</h6>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-end">
-                                <a class="btn btn-main">
-                                    More Detail
-                                    <i class="bi bi-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-4 col-md-6">
-                    <div class="card info-card sales-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Last Update : 13/02/2004</h5>
-                            <div class="d-flex align-items-center">
-                                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                    <i class="bi bi-motherboard"></i>
-                                </div>
-                                <div class="ps-3">
-                                    <h6>Titik 1</h6>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-end">
-                                <a class="btn btn-main">
-                                    More Detail
-                                    <i class="bi bi-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-4 col-md-6">
-                    <div class="card info-card sales-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Last Update : 13/02/2004</h5>
-                            <div class="d-flex align-items-center">
-                                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                                    <i class="bi bi-motherboard"></i>
-                                </div>
-                                <div class="ps-3">
-                                    <h6>Titik 1</h6>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-end">
-                                <a class="btn btn-main">
-                                    More Detail
-                                    <i class="bi bi-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @empty
+                    belum ada titik yang didaftarkan
+                @endforelse
             </div>
         </section>
 
