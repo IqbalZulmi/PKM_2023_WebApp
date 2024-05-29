@@ -25,5 +25,5 @@ Route::get('/login', [LoginController::class, 'showLoginPage'])
 Route::get('/dashboard', [DashboardController::class, 'showDashboardPage'])
 ->name('dashboardPage');
 
-Route::get('/dashboard/detail/{id_titik}', [DashboardController::class, 'showDashboardDetailPage'])
+Route::get('/dashboard/detail/{id_titik}', [DashboardController::class,'showDashboardDetailPage'])
 ->name('dashboardDetailPage');
