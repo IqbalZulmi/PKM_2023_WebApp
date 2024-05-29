@@ -97,7 +97,7 @@
                 data: {
                     labels: chartData.label,
                     datasets: [{
-                            label: 'Turbidity',
+                            label: 'Water Turbidity',
                             data: chartData.turbidity,
                             borderColor: 'rgb(255, 99, 132)',
                             borderWidth: 1,
@@ -111,7 +111,7 @@
                             fill: false
                         },
                         {
-                            label: 'Suhu Air',
+                            label: 'Water Temperature',
                             data: chartData.temperature,
                             borderColor: 'rgb(75, 192, 192)',
                             borderWidth: 1,

@@ -4,6 +4,7 @@
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\LaporanSensor;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,3 +28,6 @@ Route::get('/dashboard', [DashboardController::class, 'showDashboardPage'])
 
 Route::get('/dashboard/detail/{id_titik}', [DashboardController::class,'showDashboardDetailPage'])
 ->name('dashboardDetailPage');
+
+Route::get('/sensor-reports', [LaporanSensor::class,'showLaporanSensorPage'])
+->name('laporanSensorPage');

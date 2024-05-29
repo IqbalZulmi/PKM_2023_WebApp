@@ -48,7 +48,7 @@
                         </div>
                     </div>
                 @empty
-                    belum ada titik yang didaftarkan
+                    No Point Available
                 @endforelse
             </div>
         </section>

@@ -10,7 +10,7 @@
         </li>
 
         <li class="nav-item">
-            <a class="nav-link {{  request()->routeIs('sensorReportPage') ? '' : 'collapsed' }}" href="#">
+            <a class="nav-link {{  request()->routeIs('laporanSensorPage') ? '' : 'collapsed' }}" href="{{ route('laporanSensorPage') }}">
                 <i class="bi bi-file-earmark-break-fill"></i>
                 <span>Sensor Report</span>
             </a>

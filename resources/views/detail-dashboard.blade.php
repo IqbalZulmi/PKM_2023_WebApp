@@ -7,7 +7,7 @@
     <main id="main" class="main">
 
         <div class="pagetitle">
-            <h1>Detail Titik {{ $dataTerbaru->titik->nama }}</h1>
+            <h1>Point {{ $dataTerbaru->titik->nama }} Detail </h1>
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
