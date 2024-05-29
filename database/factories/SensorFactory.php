@@ -21,7 +21,7 @@ class SensorFactory extends Factory
     public function definition()
     {
         return [
-            Titik::inRandomOrder()->first()->id,
+            'id_titik' => Titik::inRandomOrder()->first()->id,
             'turbidity' => $this->faker->randomFloat(2, 0, 100),
             'ph' => $this->faker->randomFloat(2, 0, 14),
             'temperature' => $this->faker->randomFloat(2, 0, 100),
