@@ -69,9 +69,8 @@
             const table = $('.data-table').DataTable({
                 info: true,
                 lengthMenu: [25, 50, 100],
-                dom: '<"d-flex flex-wrap mb-2"B><"row"<"col-sm-6 d-flex justify-content-center justify-content-sm-start mb-2 mb-sm-0"l><"col-sm-6 d-flex justify-content-center justify-content-sm-end"f>>rtp',
-                buttons: [
-                    {
+                dom: '<"d-flex flex-wrap mb-2"B><"row"<"col-sm-6 d-flex justify-content-center justify-content-sm-start mb-2 mb-sm-0"l><"col-sm-6 d-flex justify-content-center justify-content-sm-end"f>>rt<"row"<"col-sm-6 d-flex justify-content-center justify-content-sm-start mb-2 mb-sm-0"i><"col-sm-6 d-flex justify-content-center justify-content-sm-end"p>>',
+                buttons: [{
                         extend: 'copy',
                         text: '<i class="bi bi-clipboard-check"></i> Copy',
                         titleAttr: 'Copy'
@@ -230,8 +229,7 @@
                             </div>
 
                             <div class="table-responsive">
-                                <table
-                                    class="table data-table table-striped table-hover border table-bordered align-middle">
+                                <table class="table data-table table-striped table-hover border table-bordered align-middle">
                                     <thead>
                                         <tr>
                                             <th scope="col">Id</th>
@@ -269,66 +267,52 @@
         </section>
     </main>
 
-    {{-- @foreach ($dataBilling as $index => $data)
-        @php
-            \Carbon\Carbon::setLocale('id');
-            $jamMulai = \Carbon\Carbon::parse($data->jam_mulai)->isoFormat('dddd, DD MMMM YYYY | HH:mm:ss');
-            $jamSelesai = \Carbon\Carbon::parse($data->jam_selesai)->isoFormat('dddd, DD MMMM YYYY | HH:mm:ss');
-        @endphp
-        <div class="modal fade" id="detail{{ $data->id }}" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    @foreach ($dataSensor as $index => $data)
+        <div class="modal fade" id="detail{{ $data->id }}" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5">Detail Billing</h1>
+                        <h1 class="modal-title fs-5">Detail Point</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <div class="table-responsive">
                             <table class="table">
                                 <tr>
-                                    <td>ID Billing</td>
+                                    <td>ID</td>
                                     <td>{{ $data->id }}</td>
                                 </tr>
                                 <tr>
-                                    <td>Lapangan</td>
-                                    <td>{{ $data->lapangan->jenis_lapangan->jenis_lapangan }} | {{ $data->lapangan->nama_lapangan }}</td>
+                                    <td>Tanggal</td>
+                                    <td>{{ $data->created_at->isoFormat('D MMMM YYYY HH:mm:ss') }}</td>
+
                                 </tr>
                                 <tr>
-                                    <td>Paket Lapangan</td>
-                                    <td>{{ $data->paket_lapangan->nama_paket }}</td>
+                                    <td>Point Name</td>
+                                    <td>{{ $data->titik->nama }}</td>
                                 </tr>
                                 <tr>
-                                    <td>Waktu Mulai</td>
-                                    <td>{{ $jamMulai }}</td>
+                                    <td>Water Turbidity</td>
+                                    <td>{{ $data->turbidity }}</td>
                                 </tr>
                                 <tr>
-                                    <td>Waktu Selesai</td>
-                                    <td>{{ $jamSelesai }}</td>
+                                    <td>Water pH</td>
+                                    <td>{{ $data->ph }}</td>
                                 </tr>
                                 <tr>
-                                    <td>Status</td>
-                                    <td>
-                                        <span class="badge {{ $data->status != 'selesai' ? 'bg-warning' : 'bg-success' }} text-white">{{ $data->status }}</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Catatan</td>
-                                    <td>{{ $data->catatan ?? 'Tidak ada catatan tersimpan' }}</td>
-                                </tr>
-                                <tr>
-                                    <td>Total Biaya</td>
-                                    <td>{{ number_format($data->total_harga, 0, ',', '.') }}</td>
+                                    <td>Water Temperature</td>
+                                    <td>{{ $data->temperature }}</td>
                                 </tr>
                             </table>
                         </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-main">Simpan</button>
                     </div>
                 </div>
             </div>
         </div>
-    @endforeach --}}
+    @endforeach
     @include('components.footer')
 @endsection
