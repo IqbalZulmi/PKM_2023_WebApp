@@ -219,11 +219,11 @@
                             </div>
                             <div class="row mb-3" id="custom-input" style="display: none;">
                                 <div class="col-md-6 mb-3">
-                                    <label for="tanggal_mulai" class="form-label">Tanggal Mulai</label>
+                                    <label for="tanggal_mulai" class="form-label">Start Date</label>
                                     <input type="date" class="form-control" name="tanggal_mulai" id="tanggal_mulai">
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="tanggal_akhir" class="form-label">Tanggal Akhir</label>
+                                    <label for="tanggal_akhir" class="form-label">End Date</label>
                                     <input type="date" class="form-control" name="tanggal_akhir" id="tanggal_akhir">
                                 </div>
                             </div>
