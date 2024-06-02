@@ -4,6 +4,7 @@
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\LaporanSensor;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,14 +17,23 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/', ([LandingController::class,'showLandingPage']))
-->name('landingPage');
 
-Route::get('/login', [LoginController::class, 'showLoginPage'])
-->name('loginPage');
+Route::middleware('auth')->group(function(){
+    Route::get('/sensor-reports', [LaporanSensor::class,'showLaporanSensorPage'])
+    ->name('laporanSensorPage');
+});
+
+Route::middleware('guest')->group(function(){
+    Route::get('/', ([LandingController::class,'showLandingPage']))
+    ->name('landingPage');
+
+    Route::get('/login', [LoginController::class, 'showLoginPage'])
+    ->name('loginPage');
+});
 
 Route::get('/dashboard', [DashboardController::class, 'showDashboardPage'])
 ->name('dashboardPage');
 
-Route::get('/dashboard/detail/{id_titik}', [DashboardController::class, 'showDashboardDetailPage'])
+Route::get('/dashboard/detail/{id_titik}', [DashboardController::class,'showDashboardDetailPage'])
 ->name('dashboardDetailPage');
+

@@ -23,15 +23,16 @@ class DashboardController extends Controller
         // Mendapatkan data sensor terbaru hari ini
         $latestSensor = Sensor::where('id_titik', $id_titik)->latest()->first();
 
-        // Mendapatkan semua data sensor hari ini
-        $latestFourSensor = Sensor::where('id_titik', $id_titik)
-            ->latest()
-            ->take(4)
-            ->get();
+        // // Mendapatkan semua data sensor hari ini
+        // $latestFourSensor = Sensor::where('id_titik', $id_titik)
+        //     ->latest()
+        //     ->take(4)
+        //     ->get();
 
         return view('detail-dashboard', [
             'dataTerbaru' => $latestSensor,
-            'empatDataTerbaru' => $latestFourSensor
+            // 'empatDataTerbaru' => $latestFourSensor,
+            'id_titik' => $id_titik,
         ]);
     }
 }
