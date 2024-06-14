@@ -19,41 +19,39 @@ class AuthController extends Controller
         return view('auth.login');
     }
 
-    public function registerProcess(Request $request)
-{
-    $request->validate([
-        'name' => 'required|string|max:255',
-        'email' => 'required|string|email|max:255|unique:users',
-        'password' => 'required',
-    ],[
-        'name.required' => 'Nama harus diisi.',
-        'email.required' => 'Email harus diisi.',
-        'email.unique' => 'Email sudah terdaftar.',
-        'email.email' => 'Email harus valid.',
-        'password.required' => 'Password harus diisi.',
-    ]);
+    public function showNotSubscriberPage()
+    {
+        return view('not-subscriber');
+    }
 
-    $user = new User();
+    public function registerProcess(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|min:8',
+            'password_confirmation' => 'required|same:password|min:8'
+        ], [
+            'name.required' => 'Nama harus diisi.',
+            'email.required' => 'Email harus diisi.',
+            'email.unique' => 'Email sudah terdaftar.',
+            'email.email' => 'Email harus valid.',
+            'password.required' => 'Password harus diisi.',
+            'password_confirmation.required' => 'Konfirmasi password harus diisi.',
+            'password_confirmation.same' => 'Konfirmasi password baru tidak cocok.',
+        ]);
+
+        $user = new User();
         $user->name = $request->name;
         $user->email = $request->email;
         $user->password = Hash::make($request->password);
         $user->save();
 
-        return redirect()->route('login')->with('success', 'Akun berhasil dibuat. Silakan masuk.');
-
-    // Coba login pengguna
-    // if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
-    //     return redirect()->route('dashboardPage')->with([
-    //         'notifikasi' => 'Registrasi berhasil! Selamat datang.',
-    //         'type' => 'success'
-    //     ]);
-    // } else {
-    //     return redirect()->back()->with([
-    //         'notifikasi' => 'Gagal masuk setelah registrasi.',
-    //         'type' => 'error'
-    //     ]);
-    // }
-}
+        return redirect()->route('loginPage')->with([
+            'notifikasi' => 'Registrasi berhasil! Selamat datang.',
+            'type' => 'success'
+        ]);
+    }
     public function loginProcess(Request $request)
     {
         $request->validate([
@@ -63,24 +61,17 @@ class AuthController extends Controller
 
         $credentials = $request->only('email', 'password');
 
-        if (Auth::attempt($credentials)){
+        if (Auth::attempt($credentials)) {
             $user = Auth::user();
             $request->session()->regenerate();
 
-            if ($user->role === 'pengelola'){
-                return redirect()->route('laporanSensorPage')->with([
-                    'notifikasi' => 'Selamat Datang ',
-                    'type' => 'success'
-                ]);
-            } elseif ($user->role === 'pelanggan'){
-                return redirect()->route('dashboardPage')->with([
-                    'notifikasi' => 'Selamat Datang ',
-                    'type' => 'success'
-                ]);
-            }
+            return redirect()->route('dashboardPage')->with([
+                'notifikasi' => 'Selamat Datang ' . $user->name,
+                'type' => 'success'
+            ]);
         }
 
-        return redirect()->back()->withInput()->with([
+        return redirect()->back()->with([
             'notifikasi' => 'Login Failed!',
             'type' => 'error'
         ]);

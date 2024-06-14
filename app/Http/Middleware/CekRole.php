@@ -15,22 +15,12 @@ class CekRole
      */
     public function handle(Request $request, Closure $next, $role): Response
     {
-        if (!Auth::check()) {
-            return redirect('/login')->with([
-                'notifikasi' => 'Silakan login terlebih dahulu!',
+        if (!Auth::check() || Auth::user()->role !== $role){
+            return redirect()->route('loginPage')->with([
+                'notifikasi' => 'Anda tidak memiliki akses. Silakan login terlebih dahulu!',
                 'type' => 'warning'
             ]);
         }
-
-        $user = Auth::user();
-
-        if ($user->role !== $role) {
-            return redirect('/login')->with([
-                'notifikasi' => 'Anda tidak memiliki akses!',
-                'type' => 'warning'
-            ]);
-        }
-
         return $next($request);
     }
 }

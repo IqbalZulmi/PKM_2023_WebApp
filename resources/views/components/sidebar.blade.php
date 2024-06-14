@@ -9,14 +9,12 @@
                 <span>Dashboard</span>
             </a>
         </li>
-        @auth
-            <li class="nav-item">
-                <a class="nav-link {{ request()->routeIs('laporanSensorPage') ? '' : 'collapsed' }}"
-                    href="{{ route('laporanSensorPage') }}">
-                    <i class="bi bi-file-earmark-break-fill"></i>
-                    <span>Sensor Report</span>
-                </a>
-            </li>
-        @endauth
+        <li class="nav-item">
+            <a class="nav-link {{ request()->routeIs('laporanSensorPage') ? '' : 'collapsed' }}"
+                href="{{ route('laporanSensorPage') }}">
+                <i class="bi bi-file-earmark-break-fill"></i>
+                <span>Sensor Report</span>
+            </a>
+        </li>
     </ul>
 </aside>

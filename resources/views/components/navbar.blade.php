@@ -20,11 +20,11 @@
                         <img src="{{ asset('assets/img/user.png') }}" alt="Profile" class="rounded-circle">
                         <span class="d-none d-md-block dropdown-toggle ps-2"></span>
                     </a><!-- End Profile Image Icon -->
-                    
+
                     <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
                         <li class="dropdown-header">
-                            <h6>user@example.com</h6>
-                            <span>User Role</span>
+                            <h6>{{ Auth::user()->email }}</h6>
+                            <span>{{ Auth::user()->roles }}</span>
                         </li>
                         <li>
                             <hr class="dropdown-divider">
@@ -39,16 +39,7 @@
                             <hr class="dropdown-divider">
                         </li>
                         <li>
-                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                <i class="bi bi-gear"></i>
-                                <span>Pengaturan Akun</span>
-                            </a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center" href="#">
+                            <a class="dropdown-item d-flex align-items-center" href="{{ route('logout') }}">
                                 <i class="bi bi-box-arrow-right"></i>
                                 <span>Keluar</span>
                             </a>

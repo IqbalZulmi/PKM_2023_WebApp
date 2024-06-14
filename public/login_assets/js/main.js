@@ -95,15 +95,15 @@ function getFieldName(input) {
 }
 
 // Event listeners
-form.addEventListener('submit', function (e) {
-    e.preventDefault()
+// form.addEventListener('submit', function (e) {
+//     e.preventDefault()
 
-    if (!checkRequired([username, email, password])) {
-        // checkLength(username, 3, 15)
-        // checkLength(password, 6, 25)
-        // checkEmail(email)
-    }
-})
+//     if (!checkRequired([username, email, password])) {
+//         // checkLength(username, 3, 15)
+//         // checkLength(password, 6, 25)
+//         // checkEmail(email)
+//     }
+// })
 
 // Check Login Error
 
@@ -170,10 +170,10 @@ function getFieldNameLg(input) {
     return input.id.charAt(0).toUpperCase() + input.id.slice(1)
 }
 
-lgForm.addEventListener('submit', function (e){
-    e.preventDefault()
+// lgForm.addEventListener('submit', function (e){
+//     e.preventDefault()
 
-    if (!checkRequiredLg([lgEmail, lgPassword])) {
-        checkEmail2(lgEmail)
-    }
-})
+//     if (!checkRequiredLg([lgEmail, lgPassword])) {
+//         checkEmail2(lgEmail)
+//     }
+// })

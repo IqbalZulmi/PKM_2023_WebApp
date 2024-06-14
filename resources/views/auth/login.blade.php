@@ -11,21 +11,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css">
 </head>
 
 <body>
     <div class="container" id="container">
         <div class="form-container register-container">
             <form action="{{ route('registerProcess') }}" method="POST">
-                @csrf
+                @csrf @method('post')
                 <h1 class="text-green">Daftar</h1>
                 <div class="form-control">
-                    <input type="text" name="name" id="username" placeholder="Nama User" value="{{ old('name') }}" />
+                    <input type="text" name="name" id="username" placeholder="Nama User"
+                        value="{{ old('name') }}" />
                     <small id="username-error">{{ $errors->first('name') }}</small>
                     <span></span>
                 </div>
                 <div class="form-control">
-                    <input type="email" name="email" id="email" placeholder="Email" value="{{ old('email') }}" />
+                    <input type="email" name="email" id="email" placeholder="Email"
+                        value="{{ old('email') }}" />
                     <small id="email-error">{{ $errors->first('email') }}</small>
                     <span></span>
                 </div>
@@ -34,18 +37,19 @@
                     <small id="password-error">{{ $errors->first('password') }}</small>
                     <span></span>
                 </div>
-                {{-- <div class="form-control">
-                    <input type="password" name="password_confirmation" id="password_confirmation" placeholder="Konfirmasi Kata Sandi" />
+                <div class="form-control">
+                    <input type="password" name="password_confirmation" id="password_confirmation"
+                        placeholder="Konfirmasi Kata Sandi" />
                     <small id="password_confirmation-error">{{ $errors->first('password_confirmation') }}</small>
                     <span></span>
-                </div> --}}
-                <button type="submit" value="submit">Daftar</button>
+                </div>
+                <button type="submit">Daftar</button>
             </form>
         </div>
 
         <div class="form-container login-container">
             <form class="form-lg" action="{{ route('loginProcess') }}" method="POST">
-                @csrf
+                @csrf @method('post')
                 <h1 class="text-green">Login</h1>
                 <div class="form-control2">
                     <input type="email" name="email" class="email-2" placeholder="Email" />
@@ -66,7 +70,7 @@
                         <a href="#">Lupa Password?</a>
                     </div>
                 </div>
-                <button type="submit" value="submit">Masuk</button>
+                <button type="submit">Masuk</button>
             </form>
         </div>
 
@@ -102,5 +106,18 @@
     </div>
 </body>
 <script src="{{ asset('login_assets/js/main.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+@if (session('notifikasi'))
+    <script>
+        Swal.fire({
+            text: '{{ session('notifikasi') }}',
+            icon: '{{ session('type') }}',
+            confirmButtonText: 'OK',
+            showCloseButton: true,
+            timer: 2000,
+        })
+    </script>
+@endif
+
 
 </html>
