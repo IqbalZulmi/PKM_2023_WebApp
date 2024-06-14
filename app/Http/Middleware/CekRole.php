@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Middleware;
 
 use Closure;
@@ -15,12 +16,13 @@ class CekRole
      */
     public function handle(Request $request, Closure $next, $role): Response
     {
-        if (!Auth::check() || Auth::user()->role !== $role){
+        if (!Auth::check() || Auth::user()->roles != $role){
             return redirect()->route('loginPage')->with([
                 'notifikasi' => 'Anda tidak memiliki akses. Silakan login terlebih dahulu!',
                 'type' => 'warning'
             ]);
         }
+
         return $next($request);
     }
 }
