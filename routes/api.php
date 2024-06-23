@@ -1,6 +1,5 @@
 <?php
-
-use App\Http\Controllers\HumidityController;
+use App\Http\Controllers\SensorController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -15,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('/addHumidity', [HumidityController::class, 'storeHumidity'])
+Route::post('/add-sensor', [SensorController::class, 'store'])
 ->name('addHumidity');
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

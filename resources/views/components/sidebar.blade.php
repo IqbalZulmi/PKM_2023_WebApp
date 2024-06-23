@@ -16,22 +16,24 @@
                 <span>Sensor Report</span>
             </a>
         </li>
-        @if (Auth::user()->roles == 'pengelola')
-            <li class="nav-heading">Manage</li>
-            <li class="nav-item">
-                <a class="nav-link {{ request()->routeIs('kelolaPelangganPage') ? '' : 'collapsed' }}"
-                    href="{{ route('kelolaPelangganPage') }}">
-                    <i class="bi bi-people-fill"></i>
-                    <span>Pelanggan</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {{ request()->routeIs('kelolaTitikPage') ? '' : 'collapsed' }}"
-                    href="{{ route('kelolaTitikPage') }}">
-                    <i class="bi bi-geo-alt-fill"></i>
-                    <span>Point</span>
-                </a>
-            </li>
-        @endif
+        @auth
+            @if (Auth::user()->roles == 'pengelola')
+                <li class="nav-heading">Manage</li>
+                <li class="nav-item">
+                    <a class="nav-link {{ request()->routeIs('kelolaPelangganPage') ? '' : 'collapsed' }}"
+                        href="{{ route('kelolaPelangganPage') }}">
+                        <i class="bi bi-people-fill"></i>
+                        <span>Pelanggan</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ request()->routeIs('kelolaTitikPage') ? '' : 'collapsed' }}"
+                        href="{{ route('kelolaTitikPage') }}">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>Point</span>
+                    </a>
+                </li>
+            @endif
+        @endauth
     </ul>
 </aside>

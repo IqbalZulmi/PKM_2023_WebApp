@@ -30,7 +30,7 @@ class DashboardController extends Controller
         //     ->get();
 
         return view('detail-dashboard', [
-            'dataTerbaru' => $latestSensor,
+            'latestData' => $latestSensor,
             // 'empatDataTerbaru' => $latestFourSensor,
             'id_titik' => $id_titik,
         ]);
