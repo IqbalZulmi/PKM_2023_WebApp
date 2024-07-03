@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::post('/add-sensor', [SensorController::class, 'store'])
-->name('addHumidity');
+->name('addSensor');
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();

@@ -336,19 +336,20 @@
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Team</h2>
-                <p>Meet the dedicated professionals who drive our success and make our mission a reality. Their expertise and passion are the foundation of everything we do.</p>
+                <p>Meet the dedicated professionals who drive our success and make our mission a reality. Their
+                    expertise and passion are the foundation of everything we do.</p>
             </div><!-- End Section Title -->
 
             <div class="container">
                 <div class="row gy-4">
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="90">
                         <div class="team-member d-flex align-items-start">
-                            <div class="pic"><img src="{{ asset('landing_assets/img/team/team-1.jpg') }}"
+                            <div class="pic"><img src="{{ asset('landing_assets/img/alfa.jpg') }}"
                                     class="img-fluid" alt=""></div>
                             <div class="member-info">
-                                <h4>Alfaturrhman</h4>
+                                <h4>Alfaturrahman</h4>
                                 <span>Chief Executive Officer</span>
-                                <p>"Jangan semnagat tetap putus asa"</p>
+                                <p>"Jangan semangat tetap putus asa"</p>
                                 <div class="social">
                                     <a href=""><i class="bi bi-twitter"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -361,12 +362,12 @@
 
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="team-member d-flex align-items-start">
-                            <div class="pic"><img src="{{ asset('landing_assets/img/team/team-2.jpg') }}"
+                            <div class="pic"><img src="{{ asset('landing_assets/img/iqbal.jpg') }}"
                                     class="img-fluid" alt=""></div>
                             <div class="member-info">
                                 <h4>A.Iqbal Zulmi</h4>
                                 <span>Chief Technical Officer</span>
-                                <p>"Masa lalu itu tak perlu dipelukan tapi dijadikan pelajaran"</p>
+                                <p>"Masa lalu itu tak perlu dilupakan tapi dijadikan pelajaran"</p>
                                 <div class="social">
                                     <a href=""><i class="bi bi-twitter"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -379,12 +380,12 @@
 
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="team-member d-flex align-items-start">
-                            <div class="pic"><img src="{{ asset('landing_assets/img/team/team-3.jpg') }}"
+                            <div class="pic"><img src="{{ asset('landing_assets/img/tanul.jpg') }}"
                                     class="img-fluid" alt=""></div>
                             <div class="member-info">
                                 <h4>Bustanul Ariffim</h4>
                                 <span>Chief Technical Officer</span>
-                                <p>"Butuh Costumer Bang belilah Yamahaku :)"</p>
+                                <p>"Salam Informatika!"</p>
                                 <div class="social">
                                     <a href=""><i class="bi bi-twitter"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -397,12 +398,12 @@
 
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="team-member d-flex align-items-start">
-                            <div class="pic"><img src="{{ asset('landing_assets/img/team/team-4.jpg') }}"
+                            <div class="pic rounded-circle"><img src="{{ asset('landing_assets/img/nopal.jpg') }}"
                                     class="img-fluid" alt=""></div>
                             <div class="member-info">
                                 <h4>Naufal Arig Dzaki R.H.</h4>
                                 <span>Chief Technical Officer</span>
-                                <p>"Aku butuh medkit, sabar...."</p>
+                                <p>"Dia hanya pindah pada rusuk yang semestinya,walaupun kau pernah jadi semestanya"</p>
                                 <div class="social">
                                     <a href=""><i class="bi bi-twitter"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -435,13 +436,14 @@
                     <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
                         <div class="pricing-item">
                             <h3>Free Plan</h3>
-                            <h4><sup>$</sup>0<span> / month</span></h4>
+                            <h4><sup>Rp</sup>0<span> / month</span></h4>
                             <ul>
                                 <li><i class="bi bi-check"></i> <span>See Dashboard data</span></li>
                                 <li><i class="bi bi-check"></i> <span>Access to platform data</span></li>
                                 <li class="na"><i class="bi bi-x"></i> <span>Can Access History Data</span>
                                 </li>
-                                <li class="na"><i class="bi bi-x"></i> <span>Free mangrove tree plantation</span></li>
+                                <li class="na"><i class="bi bi-x"></i> <span>Free mangrove tree plantation</span>
+                                </li>
                             </ul>
                             <a href="#" class="buy-btn">Contact Us</a>
                         </div>
@@ -450,7 +452,7 @@
                     <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
                         <div class="pricing-item featured">
                             <h3>Business Plan</h3>
-                            <h4><sup>$</sup>29<span> / month</span></h4>
+                            <h4><sup>Rp</sup>100K<span> / month</span></h4>
                             <ul>
                                 <li><i class="bi bi-check"></i> <span>See Dashboard data</span></li>
                                 <li><i class="bi bi-check"></i> <span>Access to platform data</span></li>
@@ -464,12 +466,13 @@
                     <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
                         <div class="pricing-item">
                             <h3>Developer Plan</h3>
-                            <h4><sup>$</sup>49<span> / month</span></h4>
+                            <h4><sup>RP</sup>180K<span> / month</span></h4>
                             <ul>
                                 <li><i class="bi bi-check"></i> <span>See Dashboard data</span></li>
                                 <li><i class="bi bi-check"></i> <span>Access to platform data</span></li>
                                 <li><i class="bi bi-check"></i> <span>Can Access History Data</span></li>
-                                <li><i class="bi bi-check"></i> <span>Free 10 mangrove tree plantation every subcription</span></li>
+                                <li><i class="bi bi-check"></i> <span>Free 10 mangrove tree plantation every
+                                        subcription</span></li>
                             </ul>
                             <a href="#" class="buy-btn">Contact Us</a>
                         </div>
@@ -517,14 +520,14 @@
                                 <i class="bi bi-envelope flex-shrink-0"></i>
                                 <div>
                                     <h3>Email Us</h3>
-                                    <p>IoT  roves@gmail.com</p>
+                                    <p>IoT roves@gmail.com</p>
                                 </div>
                             </div><!-- End Info Item -->
 
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
-                                frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen=""
-                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15956.231225080577!2d104.0484566!3d1.1187205!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d98921856ddfab%3A0xf9d9fc65ca00c9d!2sPoliteknik%20Negeri%20Batam!5e0!3m2!1sid!2sid!4v1719994997228!5m2!1sid!2sid"
+                                style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
 
@@ -602,7 +605,8 @@
 
                 <div class="col-lg-4 col-md-12">
                     <h4>Follow Us</h4>
-                    <p>Stay connected with us through social media! Follow our journey and get the latest updates, insights, and behind-the-scenes content.</p>
+                    <p>Stay connected with us through social media! Follow our journey and get the latest updates,
+                        insights, and behind-the-scenes content.</p>
                     <div class="social-links d-flex">
                         <a href=""><i class="bi bi-twitter"></i></a>
                         <a href=""><i class="bi bi-facebook"></i></a>

@@ -5,7 +5,8 @@
             <div class="card-body">
                 <h5 class="card-title">Turbidity Sensor</h5>
                 <div class="d-flex align-items-center">
-                    <div class='semi-circle d-flex justify-content-center align-items-end'>
+                    <div
+                        class='semi-circle d-flex justify-content-center align-items-end @if ($dataTerbaru->turbidity < 20) bg-info @elseif ($dataTerbaru->turbidity >= 20 && $dataTerbaru->turbidity <= 50) bg-warning @else bg-danger @endif'>
                         <div class="text-circle d-flex justify-content-center align-items-center">
                             <div class="h4 mt-3">
                                 {{ $dataTerbaru->turbidity }}
@@ -28,7 +29,7 @@
             <div class="card-body">
                 <h5 class="card-title">Water pH</h5>
                 <div class="d-flex align-items-center">
-                    <div class='semi-circle d-flex justify-content-center align-items-end'>
+                    <div class='semi-circle d-flex justify-content-center align-items-end @if ($dataTerbaru->ph >= 7.5 && $dataTerbaru->ph <= 8.0) bg-info @elseif ($dataTerbaru->ph >= 5.0 && $dataTerbaru->ph < 7.5 || $dataTerbaru->ph > 8.0 && $dataTerbaru->ph <= 8.5) bg-warning @else bg-danger @endif'>
                         <div class="text-circle d-flex justify-content-center align-items-center">
                             <div class="h4 mt-3">
                                 {{ $dataTerbaru->ph }}
@@ -51,7 +52,7 @@
             <div class="card-body">
                 <h5 class="card-title">Water Temperature</h5>
                 <div class="d-flex align-items-center">
-                    <div class='semi-circle d-flex justify-content-center align-items-end'>
+                    <div class='semi-circle d-flex justify-content-center align-items-end @if ($dataTerbaru->temperature >= 20 && $dataTerbaru->temperature <= 30 ) bg-info @elseif ($dataTerbaru->temperature >= 15 && $dataTerbaru->temperature < 20 || $dataTerbaru->temperature > 30 && $dataTerbaru->temperature <= 35) bg-warning @else bg-danger @endif'>
                         <div class="text-circle d-flex justify-content-center align-items-center">
                             <div class="h4 mt-3">
                                 {{ $dataTerbaru->temperature }}

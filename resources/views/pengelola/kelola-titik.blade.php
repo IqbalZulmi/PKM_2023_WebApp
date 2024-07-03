@@ -18,11 +18,11 @@
 
     <main id="main" class="main">
         <div class="pagetitle">
-            <h1>Manage customer</h1>
+            <h1>Manage Point</h1>
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="{{ route('dashboardPage') }}">Home</a></li>
-                    <li class="breadcrumb-item active">Manage Customer</li>
+                    <li class="breadcrumb-item active">Manage Point</li>
                 </ol>
             </nav>
         </div>
